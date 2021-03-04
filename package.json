@@ -15,8 +15,8 @@
     "contracts"
   ],
   "dependencies": {
-    "@uniswap/lib": "1.1.1",
-    "@uniswap/v2-core": "^1.0.1",
+    "@bullet-finance/bullet-swap-core": "https://github.com/bulletfinance/bullet-swap-core.git",
+    "@bulletfinance/bullet-swap-lib": "https://github.com/bulletfinance/bullet-swap-lib.git",
     "truffle-hdwallet-provider": "^1.0.17",
     "truffle-plugin-verify": "^0.4.0"
   },

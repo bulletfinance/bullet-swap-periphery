@@ -1,8 +1,8 @@
 pragma solidity =0.6.6;
 
-import '@uniswap/v2-core/contracts/interfaces/IBulletPair.sol';
-import '@uniswap/lib/contracts/libraries/Babylonian.sol';
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
+import '@bullet-finance/bullet-swap-core/contracts/interfaces/IBulletPair.sol';
+import '@bulletfinance/bullet-swap-lib/contracts/utils/Babylonian.sol';
+import '@bulletfinance/bullet-swap-lib/contracts/utils/TransferHelper.sol';
 
 import '../interfaces/IERC20.sol';
 import '../interfaces/IBulletRouter01.sol';

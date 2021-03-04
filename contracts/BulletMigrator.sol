@@ -1,6 +1,6 @@
 pragma solidity =0.6.6;
 
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
+import '@bulletfinance/bullet-swap-lib/contracts/utils/TransferHelper.sol';
 
 import './interfaces/IBulletMigrator.sol';
 import './interfaces/V1/IUniswapV1Factory.sol';
@@ -43,7 +43,7 @@ contract BulletMigrator is IBulletMigrator {
             TransferHelper.safeTransfer(token, msg.sender, amountTokenV1 - amountTokenV2);
         } else if (amountETHV1 > amountETHV2) {
             // addLiquidityETH guarantees that all of amountETHV1 or amountTokenV1 will be used, hence this else is safe
-            TransferHelper.safeTransferETH(msg.sender, amountETHV1 - amountETHV2);
+            TransferHelper.safeTransferBNB(msg.sender, amountETHV1 - amountETHV2);
         }
     }
 }

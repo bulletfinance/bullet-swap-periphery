@@ -1,7 +1,7 @@
 pragma solidity >=0.5.0;
 
-import '@uniswap/v2-core/contracts/interfaces/IBulletPair.sol';
-import '@uniswap/lib/contracts/libraries/FixedPoint.sol';
+import '@bullet-finance/bullet-swap-core/contracts/interfaces/IBulletPair.sol';
+import '@bulletfinance/bullet-swap-lib/contracts/utils/FixedPoint.sol';
 
 // library with helper methods for oracles that are concerned with computing average prices
 library BulletOracleLibrary {

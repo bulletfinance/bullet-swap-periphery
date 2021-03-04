@@ -4,8 +4,8 @@ import { deployContract } from 'ethereum-waffle'
 
 import { expandTo18Decimals } from './utilities'
 
-import BulletFactory from '@uniswap/v2-core/build/BulletFactory.json'
-import IBulletPair from '@uniswap/v2-core/build/IBulletPair.json'
+import BulletFactory from '@bullet-finance/bullet-swap-core/build/BulletFactory.json'
+import IBulletPair from '@bullet-finance/bullet-swap-core/build/IBulletPair.json'
 
 import ERC20 from '../../build/ERC20.json'
 import WETH9 from '../../build/WETH9.json'
