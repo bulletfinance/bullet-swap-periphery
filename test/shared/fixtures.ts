@@ -13,7 +13,7 @@ import UniswapV1Exchange from '../../build/UniswapV1Exchange.json'
 import UniswapV1Factory from '../../build/UniswapV1Factory.json'
 import BulletRouter01 from '../../build/BulletRouter01.json'
 import BulletMigrator from '../../build/BulletMigrator.json'
-import BulletRouter02 from '../../build/BulletRouter02.json'
+import BulletRouter from '../../build/BulletRouter.json'
 import RouterEventEmitter from '../../build/RouterEventEmitter.json'
 
 const overrides = {
@@ -53,7 +53,7 @@ export async function v2Fixture(provider: Web3Provider, [wallet]: Wallet[]): Pro
 
   // deploy routers
   const router01 = await deployContract(wallet, BulletRouter01, [factoryV2.address, WETH.address], overrides)
-  const router02 = await deployContract(wallet, BulletRouter02, [factoryV2.address, WETH.address], overrides)
+  const router02 = await deployContract(wallet, BulletRouter, [factoryV2.address, WETH.address], overrides)
 
   // event emitter for testing
   const routerEventEmitter = await deployContract(wallet, RouterEventEmitter, [])
